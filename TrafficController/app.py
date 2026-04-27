@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from modules.preprocessing import validateRequest
 from modules.router import processRequest
@@ -12,7 +13,8 @@ if "page" not in st.session_state:
 if st.session_state.page=="welcome":
     col1,col2=st.columns([1,5])
     with col1:
-        st.image("logo.png",width=90)
+        logo_path = os.path.join(os.path.dirname(__file__), "logo.jpeg")
+        st.image(logo_path, width=90)
     with col2:
         st.markdown("""
             <h1 style='text-align: center;'>
