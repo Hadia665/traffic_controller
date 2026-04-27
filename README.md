@@ -21,22 +21,6 @@ pip install -r requirements.txt
 ### 3. Run Application
 streamlit run app.py
 
-## 📁 Project Structure
-smart_city_traffic/
-│
-├── app.py                  ← Main Streamlit file
-├── requirements.txt        ← Dependencies
-├── README.md              ← This file
-├── images/                ← Logo and images
-└── modules/
-    ├── preprocessing.py   ← Input validation
-    ├── router.py          ← Request routing
-    ├── ann.py             ← ANN priority prediction
-    ├── knowledge_base.py  ← Policy rules
-    ├── csp.py             ← Signal control
-    ├── search.py          ← Route finding
-    └── final_response.py  ← Response generation
-
 ## 🧠 AI Modules
 | Module | Technique | Purpose |
 |--------|-----------|---------|
